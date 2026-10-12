@@ -1,84 +1,53 @@
-# BIO-101 Flashcards & Study Guide
+# Midlands Tech 2026 Flashcards & Study Guides
 
-An interactive, browser-based flashcard app for **BIO-101 (General Biology)**, built while studying for the course at **Midlands Technical College**. It's a single self-contained HTML file — no installs, no accounts, no dependencies. Open it and study.
+A student-made study hub for **Midlands Technical College** students in Columbia, South Carolina. Choose a course from the home page and review course material in one place.
 
-**▶️ Live app:** https://alexgoodestudio.github.io/bio101-flashcards/
+**▶️ Live app:** https://alexgoodestudio.github.io/midlands_technical_2026_flashcards/
 
-All content is aligned with **OpenStax *Biology 2e*** (the free, open textbook used in many community-college biology courses), organized chapter by chapter.
+## Courses
 
----
+### BIO-101 · General Biology
 
-## Why this exists
+Follows **OpenStax *Biology 2e*** and covers core introductory biology topics, including cells and metabolism, genetics, molecular biology, evolution, and ecology. Study with chapter-based flashcards, short-answer and essay practice, key-term definitions, memory aids, and a Final Prep section.
 
-I made this to get through BIO-101, and I'm sharing it in case it helps someone in a similar spot — community-college students, adult learners going back to school, anyone grinding through intro biology on a tight schedule. If that's you, I hope it saves you some time. Take it, use it, remix it.
+### CHM-110 · College Chemistry I
 
----
+Follows **OpenStax *Chemistry 2e***. The current guide covers textbook review and course quiz material for Chapters 1–2, plus practice-sheet topics for Chapters 3–4, including measurement, atoms and ions, solutions, molarity, formulas, stoichiometry, limiting reactants, yield, and titration. Chemistry cards include explanations, worked practice, vocabulary support, and memory aids.
 
-## What it covers
-
-Chapter-by-chapter review-question decks across the core intro-biology sequence, including:
-
-- **Cells & metabolism** — cell structure, membranes & transport, enzymes, cellular respiration, photosynthesis
-- **Genetics** — the cell cycle, mitosis & meiosis, Mendelian inheritance, chromosomal disorders
-- **Molecular biology** — DNA structure & replication, transcription & translation, gene regulation
-- **Evolution** — natural selection, speciation, population genetics & Hardy-Weinberg, phylogenetics
-- **Ecology** — biomes, population & community ecology, symbiosis
-
-Plus short-answer / essay practice decks and a dedicated **Final Prep** section.
-
----
+Both sections are organized for the **2026 classes**. The study hub is a work in progress, so the material may grow as the semester goes on.
 
 ## Features
 
-- **Multiple-choice quiz mode** with instant right/wrong feedback and a running score
-- **Answer mode** — flip straight to the answer for rapid recall self-testing
-- **"Why" explanations** on every card, so you learn the reasoning, not just the answer
-- **Memory tricks** — mnemonics and plain-English hooks for the concepts that are easy to mix up
-- **Key-term tooltips** — tap/hover any highlighted term for its definition
-- **"See in textbook" links** to the exact OpenStax section
-- **Final Prep section** with three study tiers:
-  - **All high-yield** — a broad curated review set
-  - **⭐ Top Priority** — the tightest set of most-likely-tested concepts
-  - **🧩 Diagrams** — label-and-function drills for cells, the Krebs cycle, photosynthesis, mitosis/meiosis, DNA, and more
-- **Progress saving** — your marked cards and settings persist in your browser
-- **Works on phone or desktop** — fully responsive
+- Biology and chemistry course sections from one home page
+- Multiple-choice quiz and answer/self-check modes
+- Explanations that show the reasoning behind answers
+- Key-term definitions and textbook references
+- Memory aids for concepts that are easy to mix up
+- Progress saved in your browser
+- Responsive layout for phones and desktops
 
----
+## Run locally
 
-## How to use it
+Download or clone the repository, then open `index.html` in a browser. The app works without a build step or package installation; keep `chemistry.js` beside `index.html` so the chemistry section can load.
 
-**Easiest:** just open the [live app](https://alexgoodestudio.github.io/bio101-flashcards/) in any browser.
+To serve it locally instead:
 
-**Run it locally:**
-1. Download `index.html`
-2. Double-click it — it opens in your browser and works completely offline
+```sh
+python3 -m http.server 8000
+```
 
-**Host your own copy (free, via GitHub Pages):**
-1. Fork or copy this repo
-2. Make sure the file is named `index.html` in the repo root
-3. In your repo: **Settings → Pages → Deploy from a branch → main / (root) → Save**
-4. Your copy goes live at `https://<your-username>.github.io/<repo-name>/`
+Then visit http://localhost:8000/.
 
----
+## About the material
 
-## A note on the content
+This is a student-made study aid, not an official Midlands Technical College resource. Use it alongside your instructor's materials and check course-specific expectations with your instructor.
 
-The questions are drawn from the review sections of **OpenStax *Biology 2e***, a free and openly licensed textbook. Explanations were written to teach the concepts in plain language. This is a **student-made study aid** — always defer to your own instructor, lectures, and course materials, since scope and emphasis vary from class to class. It's a supplement, not a substitute for the textbook or your professor.
-
----
+Biology content is based on **OpenStax *Biology 2e***. Chemistry material is adapted from **OpenStax *Chemistry 2e*** by Flowers, Theopold, and Langley (ISBN 9781947172616), licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The chemistry study aid is shared under the same license. Some chemistry practice also follows course quiz and instructor practice-sheet material.
 
 ## Tech
 
-Plain HTML, CSS, and vanilla JavaScript in one file. No frameworks, no build step, no external libraries. Card data and study-set tiers live in simple JavaScript objects, and progress is stored in the browser's `localStorage`.
+The app uses HTML, CSS, and vanilla JavaScript. Biology content and interface are in `index.html`; chemistry study content and behavior are in `chemistry.js`. Study progress is stored in browser `localStorage`.
 
 ---
 
-## License & sharing
-
-Free to use, share, and adapt for studying. Content is based on OpenStax *Biology 2e*, which is licensed under Creative Commons Attribution (CC BY) — see [openstax.org](https://openstax.org/details/books/biology-2e).
-
-If this helped you pass a class, that's the whole point. 🧬
-
----
-
-*Built by Alex Goode while taking BIO-101 at Midlands Technical College. © 2026.*
+Built by Alex Goode while taking BIO-101 and CHM-110 at Midlands Technical College. © 2026.
