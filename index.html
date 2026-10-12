@@ -1,27 +1,71 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BIO-101 Flashcards & Study Guide | Biology 2e Test Prep</title>
-<meta name="description" content="Free interactive biology flashcards and study guide for BIO-101, covering cells, genetics, DNA, mitosis, meiosis, evolution, and ecology. Multiple-choice quiz mode, answer-only recall mode, memory tricks, and diagram labeling. Aligned with OpenStax Biology 2e.">
-<meta name="keywords" content="BIO 101, biology flashcards, Biology 2e, OpenStax biology, cell biology quiz, genetics flashcards, mitosis meiosis, DNA replication, evolution, Hardy-Weinberg, photosynthesis, cellular respiration, ecology, final exam study guide, biology test prep">
+<title>Midlands Tech Study Hub | Biology & Chemistry</title>
+<meta name="description" content="Study guides, flashcards, essay prompts, vocabulary, and diagrams for Midlands Technical College students in Columbia, South Carolina.">
+<meta name="keywords" content="Midlands Technical College, Columbia South Carolina, BIO 101, biology flashcards, Biology 2e, OpenStax biology, chemistry study guide, college study resources, cell biology quiz, genetics flashcards, mitosis meiosis, DNA replication, evolution, Hardy-Weinberg, photosynthesis, cellular respiration, ecology, final exam study guide, biology test prep">
 <meta name="author" content="Alex Goode">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://alexgoodestudio.github.io/bio101-flashcards/">
 <!-- Open Graph / social sharing preview -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="BIO-101 Flashcards & Study Guide | Biology 2e Test Prep">
-<meta property="og:description" content="Free interactive biology flashcards covering cells, genetics, DNA, evolution, and ecology. Quiz mode, recall mode, memory tricks, and diagram labeling — aligned with OpenStax Biology 2e.">
+<meta property="og:title" content="Midlands Tech Study Hub | Biology & Chemistry">
+<meta property="og:description" content="Study guides, flashcards, essay prompts, vocabulary, and diagrams for Midlands Technical College students in Columbia, South Carolina.">
 <meta property="og:url" content="https://alexgoodestudio.github.io/bio101-flashcards/">
-<meta property="og:site_name" content="BIO-101 Flashcards">
+<meta property="og:site_name" content="Midlands Tech Study Hub">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BIO-101 Flashcards & Study Guide | Biology 2e Test Prep">
-<meta name="twitter:description" content="Free interactive biology flashcards and study guide covering cells, genetics, DNA, evolution, and ecology. Aligned with OpenStax Biology 2e.">
+<meta name="twitter:title" content="Midlands Tech Study Hub | Biology & Chemistry">
+<meta name="twitter:description" content="Study guides, flashcards, essay prompts, vocabulary, and diagrams for Midlands Technical College students in Columbia, South Carolina.">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:#f5f7f6;min-height:100vh;padding:2rem 1rem;color:#1a1a1a}
 h1{font-size:1.4rem;font-weight:600;color:#085041;margin-bottom:0.25rem}
 .subtitle{font-size:13px;color:#555;margin-bottom:1.5rem}
-.container{max-width:640px;margin:0 auto}
+.container{max-width:860px;margin:0 auto}
+.home-header{padding:2.5rem 0 2rem}
+.home-eyebrow{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#1D7A5E;margin-bottom:1rem}
+.home-title{font-size:clamp(2rem,5vw,3.25rem);line-height:1.12;letter-spacing:-0.04em;color:#123b30;margin-bottom:0.85rem}
+.home-intro{max-width:590px;font-size:16px;line-height:1.7;color:#56645e}
+.course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.course-card{width:100%;min-height:250px;padding:1.5rem;text-align:left;font:inherit;color:inherit;background:#fff;border:1px solid #dce6e1;border-radius:18px;box-shadow:0 5px 20px rgba(15,50,38,0.04);display:flex;flex-direction:column;align-items:flex-start;cursor:pointer;transition:transform 0.18s,border-color 0.18s,box-shadow 0.18s}
+.course-card:hover{transform:translateY(-3px);border-color:#1D9E75;box-shadow:0 10px 26px rgba(15,50,38,0.09)}
+.course-card:focus-visible,.home-back:focus-visible{outline:3px solid #1D9E75;outline-offset:3px}
+.course-tag{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#1D7A5E;background:#EAF6F1;border-radius:99px;padding:6px 10px;margin-bottom:1.2rem}
+.course-card h2{font-size:1.4rem;color:#123b30;margin-bottom:0.55rem}
+.course-description{font-size:14px;line-height:1.65;color:#59645f}
+.course-book{font-size:12px;line-height:1.5;color:#66736d;margin-top:1rem}
+.course-action{font-size:13px;font-weight:700;color:#1D7A5E;margin-top:auto;padding-top:1.4rem}
+.course-message{font-size:13px;color:#085041;background:#EAF6F1;border-radius:10px;padding:12px 14px;margin-top:1rem}
+.home-back{border:0;background:none;color:#1D7A5E;font:inherit;font-size:13px;font-weight:700;padding:0.25rem 0;cursor:pointer;margin:0 0 1.25rem}
+.biology-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:0.2rem}
+#biology-screen{max-width:640px;margin:0 auto}
+#chemistry-screen{max-width:640px;margin:0 auto}
+.chem-toprow{display:flex;align-items:center;justify-content:space-between;gap:0.75rem;flex-wrap:wrap;margin-bottom:1rem}
+.chem-toggle{font-size:12px;padding:7px 12px;border:1.5px solid #1D9E75;border-radius:8px;background:#fff;color:#085041;font-family:inherit;font-weight:600;cursor:pointer}
+.chem-toggle.on{background:#1D9E75;color:#fff}
+.chem-pip-grid{display:flex;flex-wrap:wrap;gap:6px;width:100%;max-width:560px;margin:0 auto 0.75rem}
+.chem-pip{width:32px;height:32px;border:1.5px solid #ddd;border-radius:8px;background:#fff;color:#555;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.chem-pip.current{background:#1D9E75;border-color:#1D9E75;color:#fff}
+.chem-pip.correct{background:#E1F5EE;border-color:#1D9E75;color:#085041}
+.chem-pip.wrong{background:#FEECEC;border-color:#e24b4a;color:#7a1f1f}
+.chem-match-list{display:flex;flex-direction:column;gap:8px}
+.chem-match-row{display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:10px;padding:10px 12px;background:#f7f8f7;border-radius:8px;font-size:13px;line-height:1.55}
+.chem-match-answer{color:#085041}
+.chem-why{margin-top:0.75rem;padding:12px 14px;border-radius:10px;background:#f0fdf8;border-left:3px solid #1D9E75;font-size:13px;line-height:1.65}
+.chem-trick{margin-top:0.75rem;padding:12px 14px;border-radius:10px;background:#FFF8E6;border-left:3px solid #E0A11B;font-size:13px;line-height:1.65}
+.chem-trick summary{font-weight:700;color:#8A6100;cursor:pointer}
+.chem-trick p{margin-top:0.5rem}
+.chem-source{display:block;margin:0.8rem auto 0;text-align:center;font-size:12px;color:#66736d}
+.chem-source a{color:#1D7A5E}
+.chem-credit{max-width:560px;margin:1rem auto 0;text-align:center;font-size:11px;line-height:1.6;color:#777}
+.chem-credit a{color:#1D7A5E}
+.chem-term{border-bottom:1.5px dotted #1D9E75;cursor:help}
+.chem-term:focus-visible{outline:2px solid #1D9E75;outline-offset:2px;border-radius:2px}
+.course-card-chem{background:#fff;border-color:#dce6e1}
+.course-card-chem .course-action{color:#1D7A5E}
+.app-footer{text-align:center;margin:2.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid #e6e6e6;font-size:12.5px;color:#999;letter-spacing:0.02em}
+@media(max-width:600px){body{padding:1.25rem 1rem}.home-header{padding:1.75rem 0 1.5rem}.course-grid{grid-template-columns:1fr}.course-card{min-height:220px}.biology-header{align-items:flex-start;flex-direction:column;gap:0.35rem}}
+@media(max-width:420px){.chem-match-row{grid-template-columns:1fr;gap:4px}}
 .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid #e0e0e0;margin-bottom:1.5rem;padding-bottom:0}
 .tab{padding:7px 14px;font-size:13px;border:none;background:none;cursor:pointer;color:#666;border-bottom:3px solid transparent;margin-bottom:-2px;font-family:inherit;transition:color 0.15s}
 .tab:hover{color:#1a1a1a}
@@ -39,7 +83,6 @@ h1{font-size:1.4rem;font-weight:600;color:#085041;margin-bottom:0.25rem}
 .tier-dgm.tier-active{background:#1D7A5E;border-color:#1D7A5E;color:#fff}
 .tier-btn.tier-top{color:#B8860B;border-color:#e8d9b0}
 .tier-btn.tier-top:hover{background:#FBF3DD}
-.app-footer{text-align:center;margin:2.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid #e6e6e6;font-size:12.5px;color:#999;letter-spacing:0.02em}
 .tab-finalprep{color:#7A1FA2;font-weight:700}
 .tab-finalprep.active{color:#fff;background:#7A1FA2;border-radius:8px 8px 0 0;border-bottom:3px solid #7A1FA2}
 .tab-answermode{color:#8A6100;font-weight:600}
@@ -138,16 +181,79 @@ h1{font-size:1.4rem;font-weight:600;color:#085041;margin-bottom:0.25rem}
   .diagram-link:hover{background:#d8f5ec;border-color:#1D9E75}
 #gt{display:none;position:fixed;background:#111;color:#fff;padding:9px 13px;border-radius:9px;font-size:12px;line-height:1.55;width:max-content;max-width:min(260px,calc(100vw - 24px));z-index:9999;pointer-events:auto;box-shadow:0 4px 14px rgba(0,0,0,0.35);word-wrap:break-word} #gt .kterm{border-bottom:1.5px dotted #1D9E75;cursor:pointer;color:#fff}
 #gt-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#1D9E75;margin-bottom:3px}
+#gt .tooltip-source{display:block;margin-top:7px;color:#86dfbc;font-weight:600;text-decoration:underline}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Biological Sciences Study Guide</h1>
-  <p class="subtitle">Chapter by chapter test prep guide</p>
-  <div id="app"></div>
-  <footer class="app-footer">&copy; 2026 Alex Goode</footer>
+  <main id="home-screen">
+    <header class="home-header">
+      <p class="home-eyebrow">Midlands Technical College · Columbia, South Carolina</p>
+      <h1 id="home-title" class="home-title">Your study spot for class.</h1>
+      <p class="home-intro">Course guides and study tools for Midlands Tech students. Pick a class to find chapter reviews, flashcards, essay prompts, vocabulary, and diagrams for test prep.</p>
+    </header>
+    <section class="course-grid" aria-label="Courses">
+      <button class="course-card" type="button" onclick="openBiology()">
+        <span class="course-tag">BIO-101 · 2026</span>
+        <h2>Biological Sciences</h2>
+        <p class="course-description">Review the course with chapter study guides, flashcards, essay questions, vocabulary, and diagrams.</p>
+        <p class="course-book">Textbook: OpenStax <em>Biology 2e</em></p>
+        <span class="course-action">Open biology study guide <span aria-hidden="true">→</span></span>
+      </button>
+      <button class="course-card course-card-chem" type="button" onclick="openChemistry()">
+        <span class="course-tag">CHM-110 · 2026</span>
+        <h2>Chemistry</h2>
+        <p class="course-description">Practice questions, chapter reviews, worked problems, and explanations for College Chemistry I.</p>
+        <p class="course-book">Textbook: OpenStax <em>Chemistry 2e</em></p>
+        <span class="course-action">Open chemistry study guide <span aria-hidden="true">→</span></span>
+      </button>
+    </section>
+    <footer class="app-footer">&copy; 2026 Alex Goode</footer>
+  </main>
+  <section id="biology-screen" hidden>
+    <button class="home-back" type="button" onclick="showHome()">← All courses</button>
+    <header class="biology-header">
+      <div>
+        <h1>Biological Sciences Study Guide</h1>
+        <p class="subtitle">BIO-101 · 2026 · OpenStax Biology 2e</p>
+      </div>
+    </header>
+    <div id="app"></div>
+    <footer class="app-footer">&copy; 2026 Alex Goode</footer>
+  </section>
+  <section id="chemistry-screen" hidden>
+    <button class="home-back" type="button" onclick="showHome()">← All courses</button>
+    <header class="biology-header">
+      <div>
+        <h1>College Chemistry I</h1>
+        <p class="subtitle">CHM-110 · 2026 · OpenStax Chemistry 2e</p>
+      </div>
+    </header>
+    <p class="subtitle">A student-made study guide with textbook review, course quiz questions, and practice problems. Not an official Midlands Technical College resource.</p>
+    <div id="chem-app"></div>
+    <p class="chem-credit">Textbook material adapted from <em>OpenStax Chemistry 2e</em> by Flowers, Theopold, and Langley (ISBN 9781947172616), licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>. This adapted study aid is shared under the same license.</p>
+    <footer class="app-footer">&copy; 2026 Alex Goode</footer>
+  </section>
 </div>
 <script>
+function openBiology(){
+  document.getElementById("home-screen").hidden=true;
+  document.getElementById("biology-screen").hidden=false;
+  document.getElementById("chemistry-screen").hidden=true;
+  window.scrollTo(0,0);
+}
+function openChemistry(){
+  document.getElementById("home-screen").hidden=true;
+  document.getElementById("biology-screen").hidden=true;
+  document.getElementById("chemistry-screen").hidden=false;
+  window.scrollTo(0,0);
+}
+function showHome(){
+  document.getElementById("biology-screen").hidden=true;
+  document.getElementById("chemistry-screen").hidden=true;
+  document.getElementById("home-screen").hidden=false;
+  window.scrollTo(0,0);
+}
 // ── EXPLANATIONS ─────────────────────────────────────────────────────────────
 const EXPLANATIONS = {
   dgm1:"Memory hook||Must-knows: nucleus=DNA, mitochondria=ATP, ribosomes=protein, Golgi=ship, lysosome=digest, rough ER=protein / smooth ER=lipid.",
@@ -2121,11 +2227,25 @@ window.addEventListener('DOMContentLoaded',()=>{
 
   function showTooltip(k, x, y){
     const def=k.dataset.def;
-    document.getElementById('gt-def').innerHTML=tt(esc(def));
+    document.getElementById('gt-def').innerHTML=tt(esc(def))+tooltipSource(k);
     positionTooltip(x, y);
+  }
+  function tooltipSource(k){
+    if(!k.dataset.source)return"";
+    return '<a class="tooltip-source" href="'+esc(k.dataset.source)+'" target="_blank" rel="noopener noreferrer">OpenStax Chemistry 2e, section '+esc(k.dataset.section)+'</a>';
   }
 
   let lastInputWasTouch=false;
+
+  document.addEventListener('mouseover',e=>{
+    const k=e.target.closest('.chem-term');
+    if(k)showTooltip(k,e.clientX+14,e.clientY-44);
+  });
+  document.addEventListener('mouseout',e=>{
+    if(e.target.closest('.chem-term')&&!(e.relatedTarget&&e.relatedTarget.closest&&e.relatedTarget.closest('#gt'))){
+      gt.style.display='none';
+    }
+  });
 
   document.addEventListener('click',e=>{
     if(lastInputWasTouch){lastInputWasTouch=false;return;}
@@ -2136,7 +2256,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     const k=e.target.closest('.kterm');
     if(k){
       if(e.target.closest('#gt')){
-        document.getElementById('gt-def').innerHTML=tt(esc(k.dataset.def));
+        document.getElementById('gt-def').innerHTML=tt(esc(k.dataset.def))+tooltipSource(k);
       } else {
         showTooltip(k, e.clientX+14, e.clientY-44);
       }
@@ -2154,7 +2274,7 @@ window.addEventListener('DOMContentLoaded',()=>{
       e.preventDefault();
       const touch=e.touches[0];
       if(e.target.closest('#gt')){
-        document.getElementById('gt-def').innerHTML=tt(esc(k.dataset.def));
+        document.getElementById('gt-def').innerHTML=tt(esc(k.dataset.def))+tooltipSource(k);
       } else {
         showTooltip(k, touch.clientX+14, touch.clientY-60);
       }
@@ -2516,4 +2636,5 @@ const CARD_LINKS = {
 render();
 
 </script>
+<script src="chemistry.js"></script>
 </body></html>
