@@ -28,7 +28,7 @@ Both sections are organized for the **2026 classes**. The study hub is a work in
 
 ## Run locally
 
-Download or clone the repository, then open `index.html` in a browser. The app works without a build step or package installation; keep `chemistry.js` beside `index.html` so the chemistry section can load.
+Download or clone the repository, then open `index.html` in a browser. The app works without a build step or package installation; keep `biology.js` and `chemistry.js` beside `index.html` so both course sections can load.
 
 To serve it locally instead:
 
@@ -46,7 +46,7 @@ Biology content is based on **OpenStax *Biology 2e***. Chemistry material is ada
 
 ## Tech
 
-The app uses HTML, CSS, and vanilla JavaScript. Biology content and interface are in `index.html`; chemistry study content and behavior are in `chemistry.js`. Study progress is stored in browser `localStorage`.
+The app uses HTML, CSS, and vanilla JavaScript. `index.html` contains the home page and shared course shell, `biology.js` contains the Biology study guide, and `chemistry.js` contains the Chemistry study guide. Study progress is stored in browser `localStorage`.
 
 ---
 
